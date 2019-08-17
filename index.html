@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>_4NX1ETY</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script type="text/javascript">
 			///// magic title changer big wooshies /////
 			var text = ["_", "_4", "_4N", "_4NX", "_4NX1","_4NX1E","_4NX1ET","_4NX1ETY","_4NX1ET","_4NX1E","_4NX1","_4NX","_4N","_4","_","\u200E","\u200E","\u200E"];
@@ -16,38 +17,25 @@
 				}
 			}
 		</script>
+    <meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@GameDebate">
+		<meta name="twitter:title" content="old">
+		<meta name="twitter:image:src" content="https://game-debate.com/images/blog/top/top__id1565972949_343178.jpg">
 		<style>
 			body {
 			background-color: #000000;
 			}
 		</style>
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@GameDebate">
-		<meta name="twitter:title" content=$row['title']>
-		<meta name="twitter:image:src" content="https://game-debate.com/images/blog/top/top__id1565972949_343178.jpg">
+        <script type="text/javascript" defer="defer">
+	$(document).ready(function(){
+		var $meta = $('meta[name="twitter:title"]').attr('content', 'Changed Meta Content Here');
+		$('head').text($meta.attr('content'));
+	});
+    </script>
 	</head>
 	<body>	
 	<img class="top-image" style="width:100%" itemprop="image" src="https://game-debate.com/images/blog/top/top__id1565972949_343178.jpg">
-		<script>
-			document.oncontextmenu = function() {
-			return false;
-			}
 
-			document.onkeydown = function(e) {
-			if(event.keyCode == 123) {
-			return false;
-			}
-			if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
-			return false;
-			}
-			if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
-			return false;
-			}
-			if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
-			return false;
-			}
-			}
-		</script>
 		<style>
 			.center {
 			margin: 0;
